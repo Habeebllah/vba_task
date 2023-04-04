@@ -3,8 +3,8 @@ import React from "react";
 const MyWalletCard = () => {
   return (
     <>
-      <h2 className="text-lg font-medium">My Wallet</h2>
-      <div className="w-full flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5">
+      <h2 className="text-lg pl-4 font-medium">My Wallet</h2>
+      <div className="w-full flex flex-col lg:flex-row items-start px-4 lg:items-center justify-between gap-5">
         <div className="flex items-start flex-col justify-start gap-4 w-full lg:flex-1">
           <div className="w-full flex items-center justify-start gap-2">
             <span className="w-[10px] h-[10px] rounded-full bg-[#FF8B00]"></span>

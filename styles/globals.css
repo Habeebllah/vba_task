@@ -6,3 +6,21 @@
 *{
   font-family: 'Noto Sans', sans-serif;
 }
+
+
+@layer base {
+  body {
+    @apply bg-[#030303] text-gray-100 dark:bg-white/50 dark:text-white  transition-colors duration-300
+  }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #2C2C2C;
+  border-radius: 40px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
