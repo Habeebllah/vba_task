@@ -1,5 +1,6 @@
 import Header from "@/components/Header/Header";
 import SideBar from "@/components/SideBar/SideBar";
+import MyWalletCard from "@/components/WalletCards/MyWalletCard";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -16,6 +17,18 @@ export default function Home() {
         <Header />
         <div className="w-full flex items-start justify-start">
           <SideBar />
+          <div className="p-4 h-screen overflow-y-scroll w-full pb-[70px]">
+            <div className="lg:p-8 pr-0 flex flex-col gap-6 justify-start items-start w-full bg-darkColor dark:bg-gray-600">
+              <div className="w-full flex lg:flex-row flex-col items-start justify-between gap-4">
+                <div className="w-full lg:w-[40%] bg-[#32393c33] py-6 lg:p-4 lg:h-[277px] rounded-[10px] flex items-start justify-between flex-col gap-5">
+                  <MyWalletCard />
+                </div>
+
+              </div>
+              
+              
+            </div>
+          </div>
         </div>
       </main>
     </>
