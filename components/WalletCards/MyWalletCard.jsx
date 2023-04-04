@@ -31,8 +31,8 @@ const MyWalletCard = () => {
             </p>
           </div>
         </div>
-        <div className="w-full lg:flex-1 flex items-center justify-center">
-          <div className="border-2 h-[200px] w-[100%] sm:w-[200px] rounded-full flex items-center justify-center flex-col border-primary gap-2">
+        <div className="bg-[url('/images/balnce.svg')] bg-contain bg-no-repeat bg-center w-full lg:flex-1 flex items-center justify-center">
+          <div className="h-[200px] w-[100%] sm:w-[200px] rounded-full flex items-center justify-center flex-col gap-2">
             <h3 className="text-2xl font-medium">$5000</h3>
             <p className="text-sm font-normal">Total Balance</p>
           </div>
