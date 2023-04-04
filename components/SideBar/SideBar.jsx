@@ -14,7 +14,7 @@ const SideBar = () => {
   }, []);
 
   const renderThemeChanger = () => {
-    const currentTheme = theme === "system" ? systemTheme : theme;
+    const currentTheme = theme !== "system" ? theme : systemTheme;
     if (!mount) return null;
 
     if (currentTheme === "dark") {
