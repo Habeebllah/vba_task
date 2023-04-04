@@ -17,10 +17,10 @@ const SideBar = () => {
     const currentTheme = theme !== "system" ? theme : systemTheme;
     if (!mount) return null;
 
-    if (currentTheme === "dark") {
-      return setTheme("light");
-    } else {
+    if (currentTheme === "light") {
       return setTheme("dark");
+    } else {
+      return setTheme("light");
     }
   };
 
