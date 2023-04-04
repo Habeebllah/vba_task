@@ -92,7 +92,7 @@ const SideBar = () => {
       </div>
       <div
         onClick={() => renderThemeChanger()}
-        className={`flex items-center justify-center md:justify-start w-full cursor-pointer h-[48px] text-base text-[#ffffff66] dark:text-white font-medium gap-3 pt-3 md:px-5`}
+        className={`flex items-center justify-center md:justify-start w-full cursor-pointer h-[48px] text-base text-[#ffffff66] dark:text-white font-medium gap-3 pt-3 md:px-10`}
       >
         <img src="/icons/moon.svg" alt="/" />
         <span className="hidden md:inline">Dark Mode</span>
