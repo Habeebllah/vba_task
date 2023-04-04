@@ -1,8 +1,9 @@
 import Header from "@/components/Header/Header";
 import SideBar from "@/components/SideBar/SideBar";
 import MyWalletCard from "@/components/WalletCards/MyWalletCard";
+import DetailCard from "@/components/WalletCards/DetailsCard";
 import Head from "next/head";
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -26,9 +27,26 @@ export default function Home() {
                 <div className="w-full lg:w-[60%] bg-[#32393c33] py-6 lg:p-0 lg:h-[277px] overflow-auto rounded-[10px]">
                   <DetailCard />
                 </div>
-
               </div>
-              
+              <div className="w-full flex items-start flex-col gap-4 justify-start bg-[#32393c33] p-4 rounded-[10px]">
+                <h2 className="text-lg font-medium">Signal Groups</h2>
+                <div className="w-full flex flex-col sm:flex-row items-center gap-5 justify-between">
+                  <div className="flex items-center flex-col sm:flex-row justify-start gap-5">
+                    <p
+                      className={`bg-white/10 text-sm text-white/60 font-normal w-[158px] h-[43px] flex items-center justify-center rounded-[10px] cursor-pointer`}
+                    >
+                      Groups You Manage
+                    </p>
+                    <p className={`text-sm font-normal text-white/60`}>
+                      Other Signal Groups
+                    </p>
+                  </div>
+                  <Link href="/" className="text-sm font-normal text-primary">
+                    Create New Signal Group
+                  </Link>
+                </div>
+                
+              </div>
 
             </div>
           </div>
