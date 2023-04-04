@@ -3,6 +3,7 @@ import SideBar from "@/components/SideBar/SideBar";
 import MyWalletCard from "@/components/WalletCards/MyWalletCard";
 import DetailCard from "@/components/WalletCards/DetailsCard";
 import SignalCard from "@/components/WalletCards/SignalCard";
+import SignalDetailCard from "@/components/WalletCards/SignalDetailCard";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -48,6 +49,7 @@ export default function Home() {
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full gap-6 items-start align-top">
                   <SignalCard />
+                  <SignalDetailCard />
                 </div>
               </div>
 
