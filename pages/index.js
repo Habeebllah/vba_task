@@ -1,4 +1,5 @@
 import Header from "@/components/Header/Header";
+import SideBar from "@/components/SideBar/SideBar";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -13,6 +14,9 @@ export default function Home() {
       </Head>
       <main className="md:flex flex-col w-full fixed top-0">
         <Header />
+        <div className="w-full flex items-start justify-start">
+          <SideBar />
+        </div>
       </main>
     </>
   );
