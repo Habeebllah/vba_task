@@ -23,10 +23,13 @@ export default function Home() {
                 <div className="w-full lg:w-[40%] bg-[#32393c33] py-6 lg:p-4 lg:h-[277px] rounded-[10px] flex items-start justify-between flex-col gap-5">
                   <MyWalletCard />
                 </div>
+                <div className="w-full lg:w-[60%] bg-[#32393c33] py-6 lg:p-0 lg:h-[277px] overflow-auto rounded-[10px]">
+                  <DetailCard />
+                </div>
 
               </div>
               
-              
+
             </div>
           </div>
         </div>
