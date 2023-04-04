@@ -14,13 +14,13 @@ const SideBar = () => {
   }, []);
 
   const renderThemeChanger = () => {
-    const currentTheme = theme !== "system" ? theme : systemTheme;
+    const currentTheme = theme === "system" ? systemTheme : theme;
     if (!mount) return null;
 
-    if (currentTheme === "light") {
-      return setTheme("dark");
-    } else {
+    if (currentTheme === "dark") {
       return setTheme("light");
+    } else {
+      return setTheme("dark");
     }
   };
 
