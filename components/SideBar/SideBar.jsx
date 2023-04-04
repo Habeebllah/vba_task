@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { useTheme } from "next-themes";
 import { HiMoon, HiOutlineSun } from "react-icons/hi";
 
-const Sidebar = () => {
+const SideBar = () => {
   const router = useRouter();
   const { systemTheme, theme, setTheme } = useTheme();
   const isActive = (href) => router.pathname === href;
@@ -102,4 +102,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default SideBar;
